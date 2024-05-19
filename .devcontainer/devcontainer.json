@@ -1,0 +1,18 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Solana Anchor Dev",
+    "context": "..",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "solana --version && anchor --version",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+      "rust-lang.rust",
+      "vadimcn.vscode-lldb",
+      "ms-vscode.cpptools",
+      "esbenp.prettier-vscode"
+    ]
+  }
